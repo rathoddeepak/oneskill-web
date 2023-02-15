@@ -10,6 +10,7 @@ import RequestDemo from './components/requestDemo';
 import CCPicker from './components/ccPicker';
 import Contact from './components/contact';
 import Lottie from "lottie-react";
+import About from  './components/about';
 import theme from './theme';
 
 const {
@@ -28,7 +29,8 @@ export default class Mobile extends Component {
 		this.state = {
 			ccVisible: false,
 			rdVisible: false,
-			cVisible: false
+			cVisible: false,
+			aVisible: false
 		}
 	}
 
@@ -55,13 +57,16 @@ export default class Mobile extends Component {
 	}
 
 	showAbout = () => {
-
+		this.setState({
+			aVisible: true
+		})
 	}
 
 	render(){
 		const {
 			ccVisible,
 			rdVisible,
+			aVisible,
 			cVisible
 		} = this.state;
 		return (
@@ -101,9 +106,6 @@ export default class Mobile extends Component {
 				</View>
 				<View style={style.rightContent}>
 					<View style={style.rightHeader}>
-						<Text onPress={this.showFeatures} style={style.link}>
-							Features
-						</Text>
 						<Text onPress={this.showAbout} style={style.link}>
 							About us
 						</Text>	
@@ -122,6 +124,7 @@ export default class Mobile extends Component {
 				<RequestDemo onClose={() => this.setState({ rdVisible: false })} v={rdVisible} />
 				<CCPicker onClose={() => this.setState({ ccVisible: false })} v={ccVisible} />				
 				<Contact onClose={() => this.setState({ cVisible: false })} v={cVisible} />
+				<About onClose={() => this.setState({ aVisible: false })} v={aVisible} />
 			</View>
 		)
 	}

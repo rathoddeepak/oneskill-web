@@ -94,7 +94,6 @@ export default class CCPicker extends Component {
 						<View style={style.header}>
 							<Text style={style.headerTxt}>Request Demo</Text>
 						</View>
-						<View style={style.content}>
 							<TextInput
 								placeholder="Phone no"
 								placeholderTextColor={theme.grey}
@@ -117,7 +116,6 @@ export default class CCPicker extends Component {
 							<TouchableOpacity onPress={this.requestDemo} style={style.button}>
 								<Text style={style.btnTxt}>Submit</Text>
 							</TouchableOpacity>
-						</View>
 
 						{busy ? <View style={style.busy}>
 							<ActivityIndicator size={40} color={theme.primary} />

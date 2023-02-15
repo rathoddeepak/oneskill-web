@@ -50,9 +50,7 @@ export default class Contact extends PureComponent {
 								Contact
 							</Text>
 						</View>
-						<View style={style.content}>
-							{cards.map(this.renderCard)}
-						</View>
+						{cards.map(this.renderCard)}
 					</TouchableOpacity>
 				</TouchableOpacity>
 			</Modal>
