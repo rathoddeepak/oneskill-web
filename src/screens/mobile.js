@@ -177,13 +177,13 @@ const style = {
 		color: theme.white,
 	},
 	subTitle: {
-		fontSize: 30,
+		fontSize: 26,
 		fontWeight: "bold",
 		color: theme.white,
 	},
 	description: {
 		marginVertical: 20,
-		fontSize: 20,
+		fontSize: 18,
 		color: theme.grey,
 	},
 	content: {
@@ -199,7 +199,7 @@ const style = {
 		minWidth: 70,
 		paddingHorizontal: 20,
 		borderRadius: 100,
-		height: 50,
+		height: 45,
 		backgroundColor: theme.white,
 		justifyContent: "center",
 		alignItems: "center",
@@ -218,7 +218,6 @@ const style = {
 	footer: {
 		width,
 		height: headerHeight,
-		backgroundColor: "#570b9b",
 		justifyContent: "space-around",
 		alignItems: "center",
 		flexDirection: "row",
@@ -233,10 +232,10 @@ const style = {
 		height: 25,
 		width: 25,
 		marginBottom: 4,
-		tintColor: "#c78ffa",
+		tintColor: "#4c4c4c",
 	},
 	btnTxt: {
 		fontSize: 14,
-		color: "#c78ffa",
+		color: "#4c4c4c",
 	},
 };
